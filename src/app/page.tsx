@@ -1,10 +1,14 @@
 import { Suspense } from 'react';
-import DummyRSC from '@/components/DummyRSC';
+import RSC from '@/components/RSC';
+import RCC from '@/components/RCC';
 
-export default async function Home() {
+export default function Home() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <DummyRSC />
-    </Suspense>
+    <>
+      <Suspense fallback={<div>Loading...</div>}>
+        <RSC />
+      </Suspense>
+      <RCC />
+    </>
   );
 }
