@@ -14,5 +14,5 @@ export default function RCC() {
 
 const fetcher = async (): Promise<string> => {
   await new Promise((resolve) => setTimeout(resolve, 3000));
-  return 'RCC';
+  return 'React Client Components';
 };
