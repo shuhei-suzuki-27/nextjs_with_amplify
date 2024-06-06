@@ -9,7 +9,7 @@ export default function RCC() {
   if (!message) {
     return <div>Loading...</div>;
   }
-  return <div>RCC</div>;
+  return <div>{message}</div>;
 }
 
 const fetcher = async (): Promise<string> => {
